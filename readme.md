@@ -18,11 +18,11 @@ table.registerPlugin(MarkerInputPlugin)
 
 Equivilant HTML example:
 ``` HTML
-<script type="module" src="https://unpkg.com/wc-grid-table-marker-input@1.0.3/index.js"></script>
+<script type="module" src="https://unpkg.com/wc-grid-table-marker-input@1.0.4/index.js"></script>
 <script>
   import { MarkerInputPlugin } from wc-grid-table-marker-input;
 </script>
-<wc-grid-table marker-identifierfield="Unternehmen" marker-databasetable="Example2Test"></wc-grid-table>
+<!-- <wc-grid-table marker-identifierfield="Unternehmen" marker-databasetable="Example2Test"></wc-grid-table> -->
 
 
 ```

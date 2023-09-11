@@ -5,8 +5,9 @@
     "main": "bundle.min.js",
     "scripts": {
         "build": "browserify index.js > bundle.min.js",
-        "build_min": "browserify -p tinyify index.js > bundle.min.js",
+        "build_min": "browserify -p tinyify index.js --standalone MarkerInputPlugin > bundle.min.js",
         "publish_all": "npm run build && git add * && git commit && npm version patch && git push && npm publish && git push --tags",
+        "serve": "pwsh -Command \"$env:NODE_HTTP_SERVER_SSL_PASSPHRASE=\"\"ThisIsASecretPassword\"\"; ls cert; http-server --ssl true --cert \"\"cert/ssl-test-cert.cert.pem\"\" --key \"\"cert/ssl-test-cert.cert.key\"\" .\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
