@@ -6,7 +6,7 @@
     "scripts": {
         "build": "browserify index.js > bundle.min.js",
         "build_min": "browserify -p tinyify index.js > bundle.min.js",
-        "publish": "npm run build && git add * && git commit && npm version patch && git push && npm publish && git push --tags",
+        "publish_all": "npm run build && git add * && git commit && npm version patch && git push && npm publish && git push --tags",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
