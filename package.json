@@ -2,7 +2,7 @@
     "name": "wc-grid-table-marker-input",
     "version": "1.0.3",
     "description": "",
-    "main": "index.js",
+    "main": "bundle.min.js",
     "scripts": {
         "build": "browserify index.js > bundle.min.js",
         "build_min": "browserify -p tinyify index.js > bundle.min.js",
