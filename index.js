@@ -92,4 +92,4 @@ const MarkerInputPlugin = {
 
 customElements.define('mark-input', MarkInput);
 
-module.exports = (function() { return { MarkerInputPlugin } })();
+module.exports = { MarkerInputPlugin }

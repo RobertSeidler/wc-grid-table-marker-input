@@ -3,6 +3,7 @@
     "version": "1.0.6",
     "description": "",
     "main": "bundle.min.js",
+    "type": "module",
     "scripts": {
         "build": "browserify index.js > bundle.min.js",
         "build_min": "browserify -p tinyify index.js --standalone MarkerInputPlugin > bundle.min.js",
